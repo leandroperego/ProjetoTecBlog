@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+a{
+	text-decoration: none;
+}
+
 body{
 	font-size: 1em;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
@@ -10,7 +14,7 @@ body{
 	width: 100vw;
 }
 
-header{
+#headerPagina{
 	background: #f7b600;
 	color: white;
 	text-align: center;
@@ -40,7 +44,6 @@ h1{
 }
 
 #ulNav>.liNav>a{
-	text-decoration: none;
 	padding: 10px;
 	/*border: 1px solid blue;*/
 }
@@ -58,4 +61,37 @@ h1{
 main, footer{
 	width: 900px;
 	margin: auto;
+}
+
+img{
+	width: 100%;
+}
+
+.post{
+	width: 70%;
+	background-color: white;
+	padding: 20px;
+	margin: 15px;
+}
+
+.headerPost{
+	margin-bottom: 20px;
+}
+
+.post>header>h2 , .post>a:link , .post>a:visited{
+	color: #f7b600;
+}
+
+a[title="Leia mais"]:hover{
+	text-decoration: underline;
+}
+
+.post>header>p{
+	font-size: 0.8em;
+}
+
+footer{
+	padding: 15px;
+	background-color: #CCCCCC;
+	text-align: center;
 }

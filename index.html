@@ -11,7 +11,7 @@
 </head>
 <body>
 	<!-- ABERTURA CABEÇALHO DA ESTRUTURA DO SITE -->
-	<header> 
+	<header id="headerPagina"> 
 		<h1><span class="tec">Tec</span>Blog</h1>
 			
 		<nav>
@@ -28,23 +28,27 @@
 
 	<!-- ABERTURA MAIN DA ESTRUTURA DO SITE -->
 	<main>
-		<article id="post1">
-			<h2>Título da postagem 1</h2>
-			<p>postado 20 março 2022</p>
+		<article id="post1" class="post">
+			<header class="headerPost">
+				<h2>Título da postagem 1</h2>
+				<p>postado 20 março 2022</p>
+			</header>
 			<img src="imagens/imagem1.jpg" alt="Xicara de café">
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula
 			</p>
-			<a href="#" title="Continue lendo">Leia mais</a>
+			<a href="#" title="Leia mais">Leia mais</a>
 		</article>
-		<article id="post2">
+		<article id="post2" class="post">
+			<header class="headerPost">
 			<h2>Título da postagem 2</h2>
 			<p>postado 10 março 2022</p>
+			</header>
 			<img src="imagens/imagem2.jpg" alt="Computador, tablet e notebook">
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula
 			</p>
-			<a href="#" title="Continue lendo">Leia mais</a>
+			<a href="#" title="Leia mais">Leia mais</a>
 		</article>
 		<aside id="aside1">
 			<h3>Postagens recentes</h3>
@@ -61,11 +65,11 @@
 		<aside id="aside2">
 			<h3>Categorias</h3>
 			<ul>
-				<li><a href="#">Jogos</a></li>
-				<li><a href="#">Celulares</a></li>
-				<li><a href="#">Informática</a></li>
-				<li><a href="#">Eletrônicos</a></li>
-				<li><a href="#">Jogos</a></li>
+				<li><a href="#" title="Leia mais">Jogos</a></li>
+				<li><a href="#" title="Leia mais">Celulares</a></li>
+				<li><a href="#" title="Leia mais">Informática</a></li>
+				<li><a href="#" title="Leia mais">Eletrônicos</a></li>
+				<li><a href="#" title="Leia mais">Jogos</a></li>
 			</ul>
 		</aside>
 	</main>
