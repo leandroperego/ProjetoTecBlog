@@ -59,7 +59,7 @@ h1{
 }
 
 main, footer{
-	width: 900px;
+	width: 950px;
 	margin: auto;
 }
 
@@ -68,10 +68,11 @@ img{
 }
 
 .post{
-	width: 70%;
+	width: 615px;
 	background-color: white;
 	padding: 20px;
 	margin: 15px;
+	/*border: 1px solid yellow;*/
 }
 
 .headerPost{
@@ -101,10 +102,10 @@ footer{
 }
 
 aside{
-	width: 30%;
+	/*width: 100%;*/
 	background-color: white;
 	padding: 10px;
-	margin: 15px;
+	margin-bottom: 20px;
 }
 
 aside>h3{
@@ -120,4 +121,19 @@ aside>article{
 
 .liAside{
 	list-style-type: none;
+}
+
+
+main{
+	position: relative;
+	/*border: 1px solid red;*/
+}
+
+#asides{
+	padding: 0;
+	width: 235px;
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	/*border: 1px solid red;*/
 }
