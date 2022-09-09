@@ -14,13 +14,13 @@
 	<header id="headerPagina"> 
 		<h1><span class="tec">Tec</span>Blog</h1>
 			
-		<nav>
+		<nav class="inline">
 			<ul id="ulNav">
-				<li class="liNav"><a href="#">Home</a></li>
-				<li class="liNav"><a href="#">Jogos</a></li>
-				<li class="liNav"><a href="#">Celulares</a></li>
-				<li class="liNav"><a href="#">Informática</a></li>
-				<li class="liNav"><a href="#">Eletrônicos</a></li>
+				<li class="headerNavUlLi"><a href="#">Home</a></li>
+				<li class="headerNavUlLi"><a href="#">Jogos</a></li>
+				<li class="headerNavUlLi"><a href="#">Celulares</a></li>
+				<li class="headerNavUlLi"><a href="#">Informática</a></li>
+				<li class="headerNavUlLi"><a href="#">Eletrônicos</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -28,53 +28,65 @@
 
 	<!-- ABERTURA MAIN DA ESTRUTURA DO SITE -->
 	<main>
-		<article id="post1" class="post">
-			<header class="headerPost">
-				<h2>Título da postagem 1</h2>
-				<p>postado 20 março 2022</p>
-			</header>
-			<img src="imagens/imagem1.jpg" alt="Xicara de café">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula
-			</p>
-			<a href="#" title="Leia mais">Leia mais</a>
-		</article>
-		<article id="post2" class="post">
-			<header class="headerPost">
-			<h2>Título da postagem 2</h2>
-			<p>postado 10 março 2022</p>
-			</header>
-			<img src="imagens/imagem2.jpg" alt="Computador, tablet e notebook">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula
-			</p>
-			<a href="#" title="Leia mais">Leia mais</a>
-		</article>
+		<section id="areaPostagem">
+			<article id="post1" class="post">
+				<header class="headerPost">
+					<h2>Título da postagem 1</h2>
+					<p>postado 20 março 2022</p>
+				</header>
 
-		<div id="asides">
-		<aside id="aside1">
-			<h3>Postagens recentes</h3>
-			<article>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<img src="imagens/imagem1.jpg" alt="Xicara de café">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula
+				</p>
 				<a href="#" title="Leia mais">Leia mais</a>
 			</article>
-			<hr>
-			<article>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+			<article id="post2" class="post">
+				<header class="headerPost">
+					<h2>Título da postagem 2</h2>
+					<p>postado 10 março 2022</p>
+				</header>
+
+				<img src="imagens/imagem2.jpg" alt="Computador, tablet e notebook">
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et scelerisque quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent nulla turpis, gravida at nunc eu, luctus aliquam justo. Praesent eget risus vehicula
+				</p>
 				<a href="#" title="Leia mais">Leia mais</a>
 			</article>
+		</section>
+
+		<aside id="aside">
+			<article id="aside1" class="asides">
+				
+				<h3>Postagens recentes</h3>
+				<section class="secaoPostRecente">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a href="#" title="Leia mais">Leia mais</a>
+				</section>
+				<hr>
+				<section class="secaoPostRecente">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a href="#" title="Leia mais">Leia mais</a>
+				</section>
+			</article>
+
+			<article id="aside2" class="asides">
+				
+				<h3>Categorias</h3>
+				<nav>
+					<ul>
+					<li class="liAside"><a href="#" title="Leia mais">Jogos</a></li>
+					<li class="liAside"><a href="#" title="Leia mais">Celulares</a></li>
+					<li class="liAside"><a href="#" title="Leia mais">Informática</a></li>
+					<li class="liAside"><a href="#" title="Leia mais">Eletrônicos</a></li>
+					<li class="liAside"><a href="#" title="Leia mais">Jogos</a></li>
+				</ul>
+				</nav>
+				
+			</article>
 		</aside>
-		<aside id="aside2">
-			<h3>Categorias</h3>
-			<ul>
-				<li class="liAside"><a href="#" title="Leia mais">Jogos</a></li>
-				<li class="liAside"><a href="#" title="Leia mais">Celulares</a></li>
-				<li class="liAside"><a href="#" title="Leia mais">Informática</a></li>
-				<li class="liAside"><a href="#" title="Leia mais">Eletrônicos</a></li>
-				<li class="liAside"><a href="#" title="Leia mais">Jogos</a></li>
-			</ul>
-		</aside>
-		</div>
 	</main>
 	<!-- FECHAMENTO MAIN DA ESTRUTURA DO SITE -->
 

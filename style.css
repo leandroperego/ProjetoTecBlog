@@ -1,139 +1,135 @@
+/*FORMATAÇÕES GERAIS*/
 *{
 	margin: 0;
 	padding: 0;
 }
 
-a{
-	text-decoration: none;
-}
-
 body{
-	font-size: 1em;
-	font-family:"Trebuchet MS", Helvetica, sans-serif;
-	background: #e6e6e6;
-	width: 100vw;
+	background-color: #E6E6E6;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-#headerPagina{
-	background: #f7b600;
-	color: white;
+nav>ul>li{
+	list-style-type: none;
+}
+
+nav.inline>ul>li{
+	display: inline;
+}
+
+a:link , a:visited{
+	text-decoration: none;
+	color: #F7B600;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/*FORMATAÇÕES LAYOUT PRINCIPAL*/
+body>header{
+	background-color: #F7B600;
 	text-align: center;
-	height: 105px;
 	padding: 15px;
 }
 
-h1{
-	padding:10px;
+body>main, body>footer{
+	width: 920px;
+	margin: 0 auto;
+}
+
+body>main{
+	margin-top: 15px;
+}
+
+body>footer{
+	background-color: #CCC;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/*FORMATAÇÕES HEADER*/
+header>h1{
+	color: white;
+	padding: 10px;
 	font-size: 2.5em;
 }
 
 .tec{
-	color: rgb(78,78,78);
+	color: #4E4E4E;
 }
 
-#ulNav{
-	text-decoration: none;
-	padding: 10px;
-	/*border: 1px solid green;	*/
+header>nav{
+	margin: 10px;
 }
 
-.liNav{
-	display: inline;
-	/*padding: 10px;*/
-	/*border: 1px solid red;*/
-}
-
-#ulNav>.liNav>a{
-	padding: 10px;
-	/*border: 1px solid blue;*/
-}
-
-#ulNav>.liNav>a:link , #ulNav>.liNav>a:visited{
+.headerNavUlLi>a:link , .headerNavUlLi>a:visited{
 	color: white;
+	padding: 8px 12px;
 }
 
-#ulNav>.liNav>a:hover{
-	background: rgba(255, 255, 255, 1);
-	color: #f7b600;
+.headerNavUlLi>a:hover{
+	background-color: white;
+	color: #F7B600;
 	border-radius: 10px;
+	text-decoration: none;
 }
 
-main, footer{
-	width: 950px;
-	margin: auto;
-}
+/*FORMATAÇÕES MAIN*/
 
-img{
-	width: 100%;
+.post>img{
+	width: 620px;
+}
+#areaPostagem{
+	width: 660px;
+	float: left;
 }
 
 .post{
-	width: 615px;
 	background-color: white;
 	padding: 20px;
-	margin: 15px;
-	/*border: 1px solid yellow;*/
+	margin-bottom: 20px;
 }
 
 .headerPost{
 	margin-bottom: 20px;
 }
 
-.post>header>h2 , .post>a:link , .post>a:visited{
-	color: #f7b600;
+.headerPost>h2{
+	color: #F7B600;
 }
 
-a[title="Leia mais"]:hover{
-	text-decoration: underline;
-}
-
-a[title="Leia mais"]{
-	color: #f7b600;
-}
-
-.post>header>p{
+.headerPost>p{
 	font-size: 0.8em;
 }
-
-footer{
-	padding: 15px;
-	background-color: #CCCCCC;
-	text-align: center;
+/*-----aside-----*/
+#aside{
+	float: right;
+	width: 240px;
 }
 
-aside{
-	/*width: 100%;*/
+.asides{
 	background-color: white;
 	padding: 10px;
 	margin-bottom: 20px;
 }
 
-aside>h3{
-	background-color: #CCCCCC;
+.asides>h3{
+	background-color: #CCC;
 	padding: 5px;
 	color: #565656;
 }
 
-aside>article{
-	padding: 5px;
+#aside1>.secaoPost{
 	font-size: 0.8em;
+	padding: 5px;
 }
 
-.liAside{
-	list-style-type: none;
+/*FORMATAÇÕES FOOTER*/
+footer{
+	clear: both;
 }
 
-
-main{
-	position: relative;
-	/*border: 1px solid red;*/
-}
-
-#asides{
-	padding: 0;
-	width: 235px;
-	position: absolute;
-	top: 0px;
-	right: 15px;
-	/*border: 1px solid red;*/
+footer>p{
+	padding: 15px;
 }
